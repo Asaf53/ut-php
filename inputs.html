@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>303 HTML Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        select {
+            width: 210px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Hello There</h3>
+
+    <form method="POST" action="inputs.php">
+        <p>First Name: <br />
+            <input type="text" name="name" id="name" placeholder="Name">
+        </p>
+        <p>Surname: <br />
+            <input type="text" name="surname" id="surname" placeholder="Surname">
+        </p>
+        <p>Email: <br />
+            <input type="email" name="email" id="email" placeholder="Email">
+        </p>
+        <p>Age: <br />
+            <input type="number" name="age" id="age" placeholder="Age">
+        </p>
+        <p>Gender: <br />
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </p>
+        <p>Course: <br />
+            <select name="position" id="position">
+                <option value="">Select Course</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="software_engineering">Software Engineering</option>
+                <option value="web_development">Web Development</option>
+            </select>
+        </p>
+        <p> Hobby: <br />
+            <input type="checkbox" name="hobby[]" value="reading" id="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="hobby[]" value="traveling" id="traveling">
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" name="hobby[]" value="sports" id="sports">
+            <label for="sports">Sports</label>
+        </p>
+        <p>Comments: <br />
+            <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea>
+        </p>
+    
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
